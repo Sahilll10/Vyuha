@@ -1,0 +1,192 @@
+.vy-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.vy-card-loading {
+  align-items: center;
+  justify-content: center;
+}
+
+.vy-card-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px 0;
+}
+.vy-back {
+  background: transparent;
+  border: none;
+  color: var(--text-lo);
+  font-size: 12.5px;
+  padding: 6px 8px;
+}
+.vy-back:hover {
+  color: var(--text-hi);
+}
+
+.vy-card-header {
+  padding: 10px 20px 18px;
+  border-bottom: 1px solid var(--hairline);
+}
+.vy-card-header h2 {
+  font-size: 22px;
+  text-transform: capitalize;
+  margin: 8px 0 6px;
+}
+.vy-card-sub {
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+.vy-card-address {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-lo);
+}
+
+.vy-card-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--hairline);
+}
+.vy-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border-right: 1px solid var(--hairline);
+}
+.vy-stat:last-child {
+  border-right: none;
+}
+.vy-stat-value {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+}
+.vy-stat-range {
+  font-size: 10.5px;
+  color: var(--text-faint);
+}
+
+.vy-card-section {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--hairline);
+}
+.vy-card-section h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-lo);
+  margin-bottom: 10px;
+}
+
+.vy-manpower-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.vy-manpower-count {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--saffron);
+}
+.vy-manpower-label {
+  font-size: 13px;
+  color: var(--text-lo);
+}
+.vy-supervisor-tag {
+  margin-left: 8px;
+  font-size: 10.5px;
+  font-family: var(--font-mono);
+  color: var(--medium);
+  border: 1px solid var(--medium);
+  border-radius: 999px;
+  padding: 1px 7px;
+}
+
+.vy-unit-list {
+  margin: 0 0 10px;
+  padding-left: 18px;
+  font-size: 12.5px;
+  color: var(--text-hi);
+}
+.vy-unit-list li {
+  margin-bottom: 3px;
+}
+
+.vy-rationale {
+  font-size: 12.5px;
+  color: var(--text-lo);
+  line-height: 1.5;
+}
+.vy-note {
+  font-style: italic;
+}
+.vy-warning {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--medium);
+}
+
+.vy-point-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.vy-point-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 9px 11px;
+  background: var(--panel-raised);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+}
+.vy-point-list strong {
+  font-size: 12px;
+}
+.vy-point-list span {
+  font-size: 11.5px;
+  color: var(--text-lo);
+}
+
+.vy-route-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.vy-route-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+}
+.vy-route-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.vy-route-dot-1 { background: #23d18b; }
+.vy-route-dot-2 { background: #5ab8ff; }
+.vy-route-dot-3 { background: #c98bff; }
+.vy-route-extra {
+  color: var(--text-faint);
+}
+
+.vy-card-footer {
+  padding: 16px 20px 20px;
+  margin-top: auto;
+}

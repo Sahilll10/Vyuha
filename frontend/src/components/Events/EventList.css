@@ -1,0 +1,98 @@
+.vy-eventlist {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.vy-eventlist-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid var(--hairline);
+}
+.vy-eventlist-header h3 {
+  font-size: 16px;
+  margin-top: 2px;
+}
+.vy-eventlist-header .btn {
+  padding: 6px 10px;
+}
+
+.vy-eventlist-sort {
+  display: flex;
+  gap: 6px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--hairline);
+}
+.vy-sort-pill {
+  background: transparent;
+  border: 1px solid var(--hairline);
+  color: var(--text-lo);
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-size: 11.5px;
+}
+.vy-sort-pill.is-active {
+  border-color: var(--saffron);
+  color: var(--saffron);
+}
+
+.vy-eventlist-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px;
+}
+
+.vy-event-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 11px 12px;
+  text-align: left;
+  color: var(--text-hi);
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+.vy-event-row:hover {
+  background: var(--panel-raised);
+  border-color: var(--hairline);
+}
+
+.vy-event-row .severity-badge {
+  flex-shrink: 0;
+  width: 56px;
+}
+
+.vy-event-row-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.vy-event-cause {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vy-event-sub {
+  font-size: 11.5px;
+  color: var(--text-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vy-event-row-meta {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--text-lo);
+}

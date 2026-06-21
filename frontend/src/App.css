@@ -1,0 +1,41 @@
+.vy-app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.vy-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.vy-workspace {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.vy-panel {
+  width: var(--panel-width);
+  flex-shrink: 0;
+  background: var(--panel);
+  border-left: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+@media (max-width: 900px) {
+  .vy-workspace {
+    flex-direction: column;
+  }
+  .vy-panel {
+    width: 100%;
+    height: 50%;
+    border-left: none;
+    border-top: 1px solid var(--hairline);
+  }
+}

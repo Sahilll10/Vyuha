@@ -1,0 +1,31 @@
+# ── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ── Backend runtime artifacts ───────────────────────────────────────────
+backend/.env
+backend/vyuha.db
+backend/data/raw/*.csv
+backend/data/processed/*.parquet
+backend/data/processed/*.graphml
+backend/saved_models/*.joblib
+backend/saved_models/*.json
+!backend/data/raw/.gitkeep
+!backend/data/processed/.gitkeep
+!backend/saved_models/.gitkeep
+
+# ── Node / frontend ──────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# ── OS / editor ──────────────────────────────────────────────────────────
+.DS_Store
+*.swp
+.vscode/
+.idea/

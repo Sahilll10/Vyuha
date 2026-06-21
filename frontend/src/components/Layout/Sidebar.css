@@ -1,0 +1,64 @@
+.vy-rail {
+  width: var(--rail-width);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--panel);
+  border-right: 1px solid var(--hairline);
+  padding: 14px 0;
+}
+
+.vy-rail-mark {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--saffron);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin-bottom: 24px;
+  letter-spacing: 0.08em;
+}
+
+.vy-rail-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.vy-rail-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 52px;
+  padding: 10px 4px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--text-faint);
+}
+.vy-rail-btn:hover {
+  color: var(--text-lo);
+  background: var(--panel-raised);
+}
+.vy-rail-btn.is-active {
+  color: var(--saffron);
+  background: var(--panel-raised);
+  border-color: var(--hairline-bright);
+}
+
+.vy-rail-glyph {
+  font-size: 17px;
+  line-height: 1;
+}
+.vy-rail-label {
+  font-size: 8.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.vy-rail-replay.is-active {
+  color: var(--high);
+}

@@ -1,0 +1,36 @@
+.vy-statusbar {
+  height: var(--status-bar-height);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 16px;
+  background: var(--panel);
+  border-top: 1px solid var(--hairline);
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.vy-status-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.vy-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.vy-status-dot.is-ok {
+  background: var(--low);
+  box-shadow: 0 0 6px var(--low);
+}
+.vy-status-dot.is-down {
+  background: var(--high);
+}
+
+.vy-status-spacer {
+  flex: 1;
+}

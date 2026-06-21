@@ -1,0 +1,44 @@
+.vy-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 8, 12, 0.7);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.vy-modal {
+  width: 100%;
+  max-width: 420px;
+  background: var(--panel);
+  border: 1px solid var(--hairline-bright);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-pop);
+  padding: 20px;
+}
+
+.vy-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.vy-modal-header h3 {
+  font-size: 16px;
+}
+
+.vy-modal-intro {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.vy-modal-intro code {
+  color: var(--text-lo);
+  background: var(--void);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
